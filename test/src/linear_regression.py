@@ -7,8 +7,8 @@ from functools import cached_property
 class AlgorithmModel:
     @cached_property
     def model(self):
-        train_data = pd.read_csv('home-data-for-ml-course/train.csv', index_col="Id")
-        test_data = pd.read_csv('home-data-for-ml-course/test.csv', index_col="Id")
+        train_data = pd.read_csv('train.csv', index_col="Id")
+        test_data = pd.read_csv('test.csv', index_col="Id")
 
         # Select features
         features = ["LotArea", "YearBuilt", "GrLivArea", "BedroomAbvGr", "TotRmsAbvGrd"]
